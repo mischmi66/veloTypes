@@ -45,9 +45,9 @@ li { margin-bottom: 10px;}
 header {
   height: 60px;
   line-height: 60px;
-  background: #1b93d7;
+  background: #fff;
   text-align: center;
-  color: #fff;
+  color: rgb(250, 10, 10);
 }
 
 .wrapper {

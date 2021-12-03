@@ -30,31 +30,26 @@ componentDidMount(){
     return (
       <div className="App">
         <div className='container'>
-          <header>
-            <div className='wrapper'>
-              <Navbar bg="mygrey" variant="light" sticky="top" expand="md" >
-              
+          <header>            
+              <Navbar bg="mygrey" variant="light" sticky="top" expand="md">
               <Navbar.Brand>
             <img src={logo} alt="Logo Velo" />
-                Velos from Contentful
+              Velos from Contentful
               </Navbar.Brand>
               <NavbarToggle />
               <NavbarCollapse>
-              <Nav>
-              
+              <Nav>              
               <NavDropdown title="Menu">
               <NavDropdown.Item href='Velos/Klapprad'>Start</NavDropdown.Item>
               <NavDropdown.Item href='Velos/Klapprad'>Über Uns</NavDropdown.Item>
-                <NavDropdown.Item href='Velos/Klapprad'>Klapprad</NavDropdown.Item>
-                <NavDropdown.Item href='Velos/Mountain'>Mountainbike</NavDropdown.Item>
-                <NavDropdown.Item href='Velos/Klapprad'>Rennrad</NavDropdown.Item>
-              </NavDropdown>
-              
-                
+              <NavDropdown.Item href='Velos/Klapprad'>Klapprad</NavDropdown.Item>
+              <NavDropdown.Item href='Velos/Mountain'>Mountainbike</NavDropdown.Item>
+              <NavDropdown.Item href='Velos/Klapprad'>Rennrad</NavDropdown.Item>
+              </NavDropdown>           
               </Nav>
               </NavbarCollapse>
               </Navbar>
-            </div>
+            
           </header>
           <main><div className='wrapper'>
           <Posts posts={this.state.articles} />
